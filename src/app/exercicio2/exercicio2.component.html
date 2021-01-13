@@ -1,0 +1,16 @@
+<input
+id = "inputExercicio2"
+type="text"
+class="form-control"
+(input)="OnUpdateServerName($event)"
+[(ngModel)]="serverNameLabel"
+>
+<button
+id="btnSubmit"
+(click)="onClickBtn()"
+[disabled]="isOnline"
+>Submit</button>
+<br>
+<br>
+
+<label>{{mensageServer}}</label>

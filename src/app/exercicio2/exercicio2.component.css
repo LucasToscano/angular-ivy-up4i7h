@@ -1,0 +1,16 @@
+#inputExercicio2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+
+#btnSubmit {
+  transition-duration: 0.4s;
+}
+
+#btnSubmit:hover {
+  background-color: #767976; /* Green */
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
