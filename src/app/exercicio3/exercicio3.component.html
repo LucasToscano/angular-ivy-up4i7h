@@ -3,5 +3,6 @@
 <p>
 	Secret Password = tuna
 </p>
-
-<p *ngFor="let count of valor">{{count}}</p>
+<div *ngIf="valor.length > 5">
+	<p *ngFor="let count of valor">{{count}}</p>
+</div>

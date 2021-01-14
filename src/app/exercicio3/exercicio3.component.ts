@@ -18,5 +18,6 @@ onClick()
 {
   this.contador ++;
   this.valor.push(this.contador)
+  this.valor.length >= 5
 }
 }
