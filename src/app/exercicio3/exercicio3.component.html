@@ -1,8 +1,18 @@
-<button
-(click)='onClick()'>Display Details</button>
+<button (click)="onClick()">Display Details</button>
 <p>
-	Secret Password = tuna
+  Secret Password = tuna
 </p>
+
 <div *ngIf="valor.length > 5">
-	<p *ngFor="let count of valor">{{count}}</p>
+  <p
+    *ngFor="let count of valor"
+    [ngStyle]="{backgroundColor : stylesBackGround(count)}"
+    [ngClass]="{countPlus : stylesText(count)}"
+  >
+    {{count}}
+  </p>
 </div>
+
+<!--
+*ngClass="{color : stylesText()}"
+-->
